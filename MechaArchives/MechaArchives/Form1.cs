@@ -20,7 +20,6 @@ namespace MechaArchives
         private void d_pullButton_Click(object sender, EventArgs e)
         {
             Button teamButtons; //Raw button that I can edit the settings of later
-            Label myLabel = this.label1;
             GroupBox teamBox = this.d_teamBox; //The GroupBox that I want the buttons to appear in
             for(int i = 0; i <16; i++) //8 is just there for now, I'll change it later. It's going downwards so the buttons appear in the proper order (1 -> 8 instead of 8 -> 1)
             {
