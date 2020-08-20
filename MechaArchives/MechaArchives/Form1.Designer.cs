@@ -34,8 +34,8 @@
             this.d_toolSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.d_pullButton = new System.Windows.Forms.ToolStripButton();
             this.d_toolSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.d_teamBox = new System.Windows.Forms.GroupBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.d_teamBox = new System.Windows.Forms.GroupBox();
             this.d_toolstrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,23 +81,13 @@
             this.d_pullButton.Size = new System.Drawing.Size(93, 22);
             this.d_pullButton.Text = "Pull Robot Data";
             this.d_pullButton.ToolTipText = "Pull data for a specific team\'s robot";
-            this.d_pullButton.Click += new System.EventHandler(this.d_pullButton_Click);
+            this.d_pullButton.Click += new System.EventHandler(this.PullTeamData);
             // 
             // d_toolSeparator2
             // 
             this.d_toolSeparator2.ForeColor = System.Drawing.SystemColors.Control;
             this.d_toolSeparator2.Name = "d_toolSeparator2";
             this.d_toolSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // d_teamBox
-            // 
-            this.d_teamBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this.d_teamBox.Location = new System.Drawing.Point(520, 25);
-            this.d_teamBox.Name = "d_teamBox";
-            this.d_teamBox.Size = new System.Drawing.Size(150, 509);
-            this.d_teamBox.TabIndex = 0;
-            this.d_teamBox.TabStop = false;
-            this.d_teamBox.Text = "Available Team Info";
             // 
             // toolStripButton1
             // 
@@ -109,6 +99,16 @@
             this.toolStripButton1.Size = new System.Drawing.Size(111, 22);
             this.toolStripButton1.Text = "Update Robot Data";
             this.toolStripButton1.ToolTipText = "Pull data for a specific team\'s robot";
+            // 
+            // d_teamBox
+            // 
+            this.d_teamBox.Dock = System.Windows.Forms.DockStyle.Right;
+            this.d_teamBox.Location = new System.Drawing.Point(520, 25);
+            this.d_teamBox.Name = "d_teamBox";
+            this.d_teamBox.Size = new System.Drawing.Size(150, 509);
+            this.d_teamBox.TabIndex = 0;
+            this.d_teamBox.TabStop = false;
+            this.d_teamBox.Text = "Available Team Info";
             // 
             // d_formMain
             // 
