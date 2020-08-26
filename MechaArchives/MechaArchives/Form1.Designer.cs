@@ -83,6 +83,7 @@
             this.d_uploadButton.Size = new System.Drawing.Size(111, 22);
             this.d_uploadButton.Text = "Upload Robot Data";
             this.d_uploadButton.ToolTipText = "Upload data about a team\'s robot";
+            this.d_uploadButton.Click += new System.EventHandler(this.AddRobotData);
             // 
             // d_toolSeparator1
             // 
@@ -134,21 +135,21 @@
             // 
             this.d_teamBox.Controls.Add(this.d_allTeamPanel);
             this.d_teamBox.Dock = System.Windows.Forms.DockStyle.Right;
-            this.d_teamBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d_teamBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.d_teamBox.Location = new System.Drawing.Point(726, 25);
             this.d_teamBox.Name = "d_teamBox";
             this.d_teamBox.Size = new System.Drawing.Size(200, 586);
             this.d_teamBox.TabIndex = 2;
             this.d_teamBox.TabStop = false;
-            this.d_teamBox.Text = "Available Team Info";
+            this.d_teamBox.Text = "Available Teams By Ranking Points";
             // 
             // d_allTeamPanel
             // 
             this.d_allTeamPanel.AutoScroll = true;
             this.d_allTeamPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.d_allTeamPanel.Location = new System.Drawing.Point(3, 18);
+            this.d_allTeamPanel.Location = new System.Drawing.Point(3, 16);
             this.d_allTeamPanel.Name = "d_allTeamPanel";
-            this.d_allTeamPanel.Size = new System.Drawing.Size(194, 565);
+            this.d_allTeamPanel.Size = new System.Drawing.Size(194, 567);
             this.d_allTeamPanel.TabIndex = 0;
             // 
             // d_filterTeamBox
